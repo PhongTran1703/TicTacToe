@@ -27,7 +27,6 @@ int main()
             break;
         }
         else if(checkTie(spaces)){
-            std::cout << "It's a tie!\n";
             running = false;
             break;
 
@@ -42,15 +41,12 @@ int main()
            else if(checkTie(spaces)){
             running = false;
             break;
-
         }
-
     }
 
     std::cout << "Thank you for playing!\n";
     return 0;
 }
-
 
 void drawBoard(char *spaces){
 
@@ -131,7 +127,6 @@ bool checkWinner(char *spaces, char player, char computer){
     else{
         return false;
     }
-
 
     return true;
 }
